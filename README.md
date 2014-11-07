@@ -69,6 +69,7 @@ Documentation
 **TimeSpan.Subtract(timespan)**
 *Subtracts two timespans and returns a new TimeSpan object with the resulting time*
 ##### You can also use the add Methods with a negative value
+*Means TimeSpan.subtractTimeUnit(value) is the same as TimeSpan.addTimeUnit(-value)*  
 **TimeSpan.subtractTicks(ticks)**
 *Subtracts the ticks from the timespan*  
 **TimeSpan.subtractMilliseconds(milliseconds)**
