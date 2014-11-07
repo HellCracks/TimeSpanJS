@@ -14,7 +14,9 @@ console.log(ts3.Days()); // 0 Days
 ```
 TODO
 =====
+- [x] Create initial class
 - [x] Implement Total Functions
+- [ ] Clean up code
 - [ ] Create unit tests
 - [ ] Implement Format Function
 
