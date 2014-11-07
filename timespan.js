@@ -9,51 +9,55 @@ var TimeSpan = (function () {
     }
     TimeSpan.prototype.addTicks = function (ticks) {
         this.ticks += ticks;
-        return this;
     };
     TimeSpan.prototype.addMilliseconds = function (milliseconds) {
         this.ticks += milliseconds * 10000;
-        return this;
     };
     TimeSpan.prototype.addSeconds = function (seconds) {
         this.ticks += seconds * 10000000;
-        return this;
     };
     TimeSpan.prototype.addMinutes = function (minutes) {
         this.ticks += 600000000 * minutes;
-        return this;
     };
     TimeSpan.prototype.addHours = function (hours) {
         this.ticks += 36000000000 * hours;
-        return this;
     };
     TimeSpan.prototype.addDays = function (days) {
         this.ticks += 864000000000 * days;
-        return this;
     };
     TimeSpan.prototype.subtractTicks = function (ticks) {
         this.ticks -= ticks;
-        return this;
     };
     TimeSpan.prototype.subtractMilliseconds = function (milliseconds) {
         this.ticks -= milliseconds * 10000;
-        return this;
     };
     TimeSpan.prototype.subtractSeconds = function (seconds) {
         this.ticks -= seconds * 10000000;
-        return this;
     };
     TimeSpan.prototype.subtractMinutes = function (minutes) {
         this.ticks -= 600000000 * minutes;
-        return this;
     };
     TimeSpan.prototype.subtractHours = function (hours) {
         this.ticks -= 36000000000 * hours;
-        return this;
     };
     TimeSpan.prototype.subtractDays = function (days) {
         this.ticks -= 864000000000 * days;
-        return this;
+    };
+
+    TimeSpan.prototype.TotalDays = function () {
+        return this.ticks * 1.1574074074074074074e-12;
+    };
+    TimeSpan.prototype.TotalHours = function () {
+        return this.ticks * 2.77777777777777778e-11;
+    };
+    TimeSpan.prototype.TotalMinutes = function () {
+        return this.ticks * 1.6666666666667e-9;
+    };
+    TimeSpan.prototype.TotalSeconds = function () {
+        return this.ticks * (1 / 10000000);
+    };
+    TimeSpan.prototype.TotalMilliseconds = function () {
+        return this.ticks * (1.0 / 10000);
     };
 
     TimeSpan.prototype.Ticks = function () {
@@ -80,7 +84,7 @@ var TimeSpan = (function () {
     TimeSpan.prototype.Subtract = function (timespan) {
         return new TimeSpan(0, 0, 0, 0, 0, this.ticks - timespan.Ticks());
     };
-    TimeSpan.Compare = function (timespan1, timespan2) {
+    TimeSpan.prototype.Compare = function (timespan1, timespan2) {
         if (timespan1.Ticks() > timespan2.Ticks())
             return 1;
         if (timespan1.Ticks() < timespan2.Ticks())
