@@ -35,7 +35,7 @@ Documentation
 *Generates a new timespan object with the specified seconds*
 **TimeSpan.FromMinutes(minutes)**
 *Generates a new timespan object with the specified minutes*
-**TimeSpan.FromHours(hours)**
+**TimeSpan.FromHours(hours)**  
 *Generates a new timespan object with the specified hours*
 **TimeSpan.FromDays(days)**
 *Generates a new timespan object with the specified days*
