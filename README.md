@@ -1,4 +1,6 @@
-TimeSpanJS
+Documentation
 ==========
 
-a timespan class
+```
+TimeSpan.FromHours(20);
+```
