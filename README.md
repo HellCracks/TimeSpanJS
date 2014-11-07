@@ -28,17 +28,17 @@ Documentation
 *Generate a new timespan object with a specific time unit*
 
 **TimeSpan.FromTicks(ticks)**
-*Generates a new timespan object with the specified ticks*
+*Generates a new timespan object with the specified ticks*  
 **TimeSpan.FromMilliseconds(milliseconds)**
-*Generates a new timespan object with the specified milliseconds*
+*Generates a new timespan object with the specified milliseconds*  
 **TimeSpan.FromSeconds(seconds)**
-*Generates a new timespan object with the specified seconds*
+*Generates a new timespan object with the specified seconds*  
 **TimeSpan.FromMinutes(minutes)**
-*Generates a new timespan object with the specified minutes*
+*Generates a new timespan object with the specified minutes*  
 **TimeSpan.FromHours(hours)**
 *Generates a new timespan object with the specified hours*  
 **TimeSpan.FromDays(days)**
-*Generates a new timespan object with the specified days*
+*Generates a new timespan object with the specified days*  
 
 ##Non-Static Functions
 ###Add Functions
