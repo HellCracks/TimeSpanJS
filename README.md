@@ -12,7 +12,13 @@ ts2 = new TimeSpan(1,2,3,4,5);
 ts3 = ts.Subtract(ts2);
 console.log(ts3.Days()); // 0 Days
 ```
-    
+TODO
+=====
+- [x] Implement Total Functions
+- [ ] Create unit tests
+- [ ] Implement Format Function
+
+
 
 Documentation
 =============
@@ -102,14 +108,6 @@ Documentation
 ###Miscellaneous 
 **TimeSpan.Negate()**
 *Creates a new timespan, with the negated time and return it*
-
-
-TODO
-=====
-- [x] Implement Total Functions
-- [ ] Create unit tests
-- [ ] Implement Format Function
-
 
 
 
