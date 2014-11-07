@@ -1,0 +1,4 @@
+TimeSpanJS
+==========
+
+a timespan class
