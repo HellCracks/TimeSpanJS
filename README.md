@@ -1,9 +1,9 @@
 Website
 ====
 https://hellcracks.github.io/TimeSpanJS/
-Usage
-=====
-Look in the USAGE file.
+Demos
+====
+Look into the demos folder
 TODO
 =====
 - [x] Create initial class
