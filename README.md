@@ -1,11 +1,9 @@
+Website
+====
+https://hellcracks.github.io/TimeSpanJS/
 Usage
 =====
-```javascript
-var ts = new TimeSpan(20,TimeUnit.Days);
-var ts2 = new TimeSpan(15,TimeUnit.Days);
-var result = TimeSpan.add(ts,ts2);
-console.log(result == ts.add(ts2));
-```
+Look in the USAGE file.
 TODO
 =====
 - [x] Create initial class
