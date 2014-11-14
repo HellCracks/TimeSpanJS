@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    
+</head>
+
+<body>
+    <input id="time" type="datetime">
+    <input type="button" value="Parse" onclick="parseAndAlert()">
+    <script src="timespan.min.js"></script>
+    <script type="text/javascript">
+        function parseAndAlert(){
+            var content = document.getElementById("time").value;
+            try{
+            var ts = TimeSpan.parse(content);
+                alert(ts.format("~hh hours ~mm minutes and ~ss seconds"));
+            }catch(e){
+              alert(e.message);
+            }
+        }
+    </script>
+</body>
+</html>
