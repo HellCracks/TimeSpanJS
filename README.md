@@ -13,6 +13,10 @@ TODO
 - [ ] Add demos
 - [ ] Improve code quality
 
+Issues
+====
+- [ ] Add a min and max value to the parse function
+
 Changelog
 ====
 > Released version 1.0
