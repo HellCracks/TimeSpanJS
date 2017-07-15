@@ -1,9 +1,6 @@
 Website
 ====
-https://hellcracks.github.io/TimeSpanJS/
-Demos
-====
-Look into the demos folder
+https://madbhatter.github.io/TimeSpanJS/documentation/enums/timeunit.html
 TODO
 =====
 - [x] Create unit tests
@@ -19,5 +16,5 @@ Issues
 
 Changelog
 ====
-> Released version 1.0
+> Released version 0.1
 
